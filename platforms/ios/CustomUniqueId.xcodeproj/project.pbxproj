@@ -44,7 +44,7 @@
 		BBC19974E19D47E99E282157 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B4F1A614156408282D72F9B /* AddressBook.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		C8CA40DC321142049C67F102 /* CDVAccelerometer.m in Sources */ = {isa = PBXBuildFile; fileRef = 71CD28305CD24F39AD220A51 /* CDVAccelerometer.m */; };
 		CE121E4B1E8E3CCA005D98DE /* CustomUniqueId.m in Sources */ = {isa = PBXBuildFile; fileRef = CE121E4A1E8E3CCA005D98DE /* CustomUniqueId.m */; };
-		CE121E4E1E8E3D17005D98DE /* KeychainItemWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = CE121E4D1E8E3D17005D98DE /* KeychainItemWrapper.m */; };
+		CE121E4E1E8E3D17005D98DE /* KeychainItemWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = CE121E4D1E8E3D17005D98DE /* KeychainItemWrapper.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		CE121E511E8E3D56005D98DE /* NSDataEncryption.m in Sources */ = {isa = PBXBuildFile; fileRef = CE121E501E8E3D56005D98DE /* NSDataEncryption.m */; };
 		D6FCC7C151F1415CBD03F809 /* CDVContact.m in Sources */ = {isa = PBXBuildFile; fileRef = 4916298EA6E54AB381ACFC39 /* CDVContact.m */; };
 		D8EF70D13C6D49D9AA4E4C60 /* CDVAssetLibraryFilesystem.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E04B0BE566E46C6986C99A2 /* CDVAssetLibraryFilesystem.m */; };
@@ -391,6 +391,11 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 510;
+				TargetAttributes = {
+					1D6058900D05DD3D006BFB54 = {
+						DevelopmentTeam = 7Z8PJGM2P6;
+					};
+				};
 			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "CustomUniqueId" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -516,8 +521,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = NO;
-				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -529,6 +536,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				PRODUCT_NAME = CustomUniqueId;
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -541,8 +549,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = NO;
-				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CustomUniqueId/CustomUniqueId-Prefix.pch";
@@ -552,6 +562,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				PRODUCT_NAME = CustomUniqueId;
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

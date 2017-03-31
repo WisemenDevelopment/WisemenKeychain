@@ -49,6 +49,31 @@
             <p class="event listening">Connecting to Device</p>
             <p class="event received">Device is Ready</p>
         </div>
+        <button id="openCustomCameraBtn">Open </button>
+       
+        <img id="photoImg" style="position: fixed; top: 0; width: 50%; left: 25%;" />
+        <script src="js/CustomUniqueId.js"></script>
+        <script>
+            document.getElementById("openCustomCameraBtn").addEventListener("click", function(){
+                                                                            CustomUniqueId._INITIALIZE_KEYCHAIN(function(imagePath)
+                                                                                                  {
+                                                                                                  alert(imagePath);
+                                                                                                  },
+                                                                                                  function(){
+                                                                                                  
+                                                                                                  });
+                                                                            }, false);
+                                                                            
+                                                                            
+                                                                           
+                                                                            
+                                                                            
+                                                                            
+                                                                            
+                                                                            
+                                                                            
+                                                                            
+            </script>
     </div>
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
