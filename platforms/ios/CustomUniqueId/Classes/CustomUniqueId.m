@@ -21,7 +21,7 @@
 #include <Security/SecBase.h>
 #include <Security/SecAccessControl.h>
 #include <CoreFoundation/CFArray.h>
-//#include "KeychainItemWrapper.h"
+#include "KeychainItemWrapper.h"
 #import <CommonCrypto/CommonDigest.h>
 #import <CommonCrypto/CommonCryptor.h>
 #include "NSDataEncryption.h"
@@ -36,7 +36,7 @@
 - (void)_INIT_KEYCHAIN:(CDVInvokedUrlCommand*)command
 {
     NSString *Appstr = [command.arguments objectAtIndex:0];
- //   KeychainItemWrapper *keychainItem = [[KeychainItemWrapper alloc] initWithIdentifier:Appstr accessGroup:nil];
+    KeychainItemWrapper *keychainItem = [[KeychainItemWrapper alloc] initWithIdentifier:Appstr accessGroup:nil];
     
 }
 
