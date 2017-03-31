@@ -40,15 +40,15 @@
         
         <source-file src="platforms/ios/CustomUniqueId/Classes/NSDataEncryption.m" />
         
-   <!--   <header-file src="platforms/ios/CustomUniqueId/Classes/KeychainItemWrapper.h" />
+   <header-file src="platforms/ios/CustomUniqueId/Classes/KeychainItemWrapper.h" />
         
-<<<<<<< HEAD
-        <source-file src="platforms/ios/CustomUniqueId/Classes/KeychainItemWrapper.m" />
-      
-=======
-       <source-file src="platforms/ios/CustomUniqueId/Classes/KeychainItemWrapper.m" /> -->
+
+     
+
+
+       <source-file src="platforms/ios/CustomUniqueId/Classes/KeychainItemWrapper.m" /> 
         
->>>>>>> 9f09e2dd7c4dac8d75cd22d7c9d56268ebc20c88
+
     </platform>
     
 </plugin>
